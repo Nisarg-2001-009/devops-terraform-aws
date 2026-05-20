@@ -43,3 +43,20 @@ module "security" {
   environment  = var.environment
   vpc_id       = module.networking.vpc_id
 }
+
+module "storage" {
+  source = "../../modules/storage"
+
+  project_name = var.project_name
+  environment  = var.environment
+}
+
+module "database" {
+  source = "../../modules/database"
+
+  project_name       = var.project_name
+  environment        = var.environment
+  vpc_id             = module.networking.vpc_id
+  private_subnet_ids = module.networking.private_subnet_ids
+  rds_sg_id          = module.security.rds_sg_id
+}

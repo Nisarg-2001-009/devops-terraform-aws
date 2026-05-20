@@ -33,3 +33,23 @@ output "rds_sg_id" {
   value       = module.security.rds_sg_id
 }
 
+output "frontend_bucket_name" {
+  description = "Frontend S3 bucket name"
+  value       = module.storage.frontend_bucket_name
+}
+
+output "frontend_website_endpoint" {
+  description = "Frontend S3 website endpoint"
+  value       = module.storage.frontend_website_endpoint
+}
+
+output "db_endpoint" {
+  description = "RDS database endpoint"
+  value       = module.database.db_endpoint
+}
+
+output "db_name" {
+  description = "Database name"
+  value       = module.database.db_name
+}
+
