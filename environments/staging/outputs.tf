@@ -43,3 +43,18 @@ output "frontend_website_endpoint" {
   value       = module.storage.frontend_website_endpoint
 }
 
+output "alb_dns_name" {
+  description = "Application Load Balancer DNS name — access the API here"
+  value       = module.compute.alb_dns_name
+}
+
+output "ec2_instance_id" {
+  description = "EC2 instance ID"
+  value       = module.compute.ec2_instance_id
+}
+
+output "ec2_private_ip" {
+  description = "EC2 private IP address"
+  value       = module.compute.ec2_private_ip
+}
+
