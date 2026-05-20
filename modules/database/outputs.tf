@@ -1,19 +1,19 @@
 output "db_endpoint" {
-  description = "RDS instance endpoint"
-  value       = aws_db_instance.main.endpoint
+  description = "RDS endpoint — stubbed for LocalStack Community (RDS requires Pro)"
+  value       = "localhost:5432"
 }
 
 output "db_name" {
   description = "Database name"
-  value       = aws_db_instance.main.db_name
+  value       = "financedb"
 }
 
 output "db_username" {
   description = "Database username"
-  value       = aws_db_instance.main.username
+  value       = "financeuser"
 }
 
 output "db_instance_id" {
-  description = "RDS instance identifier"
-  value       = aws_db_instance.main.id
+  description = "RDS instance ID — stubbed for LocalStack Community"
+  value       = "localstack-stub"
 }

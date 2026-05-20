@@ -43,13 +43,3 @@ output "frontend_website_endpoint" {
   value       = module.storage.frontend_website_endpoint
 }
 
-output "db_endpoint" {
-  description = "RDS database endpoint"
-  value       = module.database.db_endpoint
-}
-
-output "db_name" {
-  description = "Database name"
-  value       = module.database.db_name
-}
-
