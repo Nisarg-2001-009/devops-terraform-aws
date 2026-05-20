@@ -205,5 +205,5 @@ S3 State Bucket + DynamoDB → Terraform remote state and locking
 
 ---
 
-**Built by Nisarg Patel**  
+**Built by Nisarg Pawar**  
 [GitHub](https://github.com/Nisarg-2001-009)
