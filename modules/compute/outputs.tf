@@ -9,16 +9,16 @@ output "ec2_private_ip" {
 }
 
 output "alb_dns_name" {
-  description = "DNS name of the Application Load Balancer"
-  value       = aws_lb.main.dns_name
+  description = "ALB DNS — stubbed for LocalStack Community (ELBv2 requires Pro)"
+  value       = "localstack-stub-alb.us-east-1.elb.amazonaws.com"
 }
 
 output "alb_arn" {
-  description = "ARN of the ALB"
-  value       = aws_lb.main.arn
+  description = "ALB ARN — stubbed for LocalStack Community"
+  value       = "arn:aws:elasticloadbalancing:us-east-1:000000000000:loadbalancer/app/stub/stub"
 }
 
 output "target_group_arn" {
-  description = "ARN of the target group"
-  value       = aws_lb_target_group.backend.arn
+  description = "Target group ARN — stubbed for LocalStack Community"
+  value       = "arn:aws:elasticloadbalancing:us-east-1:000000000000:targetgroup/stub/stub"
 }

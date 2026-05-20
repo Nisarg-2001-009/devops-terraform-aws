@@ -23,11 +23,6 @@ variable "private_subnet_ids" {
   type        = list(string)
 }
 
-variable "alb_sg_id" {
-  description = "Security group ID for ALB"
-  type        = string
-}
-
 variable "ec2_sg_id" {
   description = "Security group ID for EC2"
   type        = string
